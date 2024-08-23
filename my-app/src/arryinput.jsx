@@ -11,7 +11,7 @@ export default function Todo() {
   }
 
   return (
-    <div className="w-full h-screen bg-[url('qwerty.jpeg')]">
+    <div className="w-full h-screen bg-[url('https://images.pexels.com/photos/409030/pexels-photo-409030.jpeg')]">
       <form onSubmit={handleSubmit}>
         <input
           onChange={(e) => setTodo(e.target.value)}
