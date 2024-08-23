@@ -1,20 +1,34 @@
-import React from 'react'
-import { useState } from 'react'
+import { useState } from "react";
 
-const Arr = () => {
-    const  [item, setItem] = useState("");
-    function clickh(){
-      console.log(item);
-      <h1>{item}</h1>
-      setItem("");
-      <Arr />
-    }
-    return (
-      <div className='mt-20 ml-10'>
-       <input type="text" onChange={(e)=>{setItem(e.target.value)}} value ={item}/>
-       <button onClick={clickh}>Add</button>
+export default function Todo() {
+  const [todo, setTodo] = useState("");
+  const [todos, setTodos] = useState([]);
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setTodos([...todos, todo]);
+    setTodo("");
+  }
+
+  return (
+    <div className="w-full h-screen bg-[url('qwerty.jpeg')]">
+      <form onSubmit={handleSubmit}>
+        <input
+          onChange={(e) => setTodo(e.target.value)}
+          value={todo}
+          type="text"
+        />
+        <button type="submit">Add</button>
+      </form>
+      <ul>
+        {todos.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+      <div>
+        <p>Console Output:</p>
+        {console.log(todos)}
+      </div>
     </div>
-  )
+  );
 }
-
-export default Arr
