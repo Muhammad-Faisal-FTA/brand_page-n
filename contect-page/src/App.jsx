@@ -1,12 +1,13 @@
 
 import './App.css';
+import Header from './header.jsx'
 
 function App() {
   return (
     <div className="App">
-     <div className="text-center bg-blue-500 p-4 text-white">
-  Hello, Tailwind CSS!
-</div>
+     <div>
+         <Header />
+     </div>
 
     </div>
   );
