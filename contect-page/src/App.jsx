@@ -5,11 +5,11 @@ import Header from './header.jsx'
 function App() {
   return (
     <div className="App">
-     <div>
-         <Header />
+      <div className='w-[84.1rem] h-[53.5rem] -top-[32.625rem] -left-[42.0625rem] gap-0 bg-[#fdfbfb]'>
+        <Header />
+      </div>
      </div>
-
-    </div>
+   
   );
 }
 
