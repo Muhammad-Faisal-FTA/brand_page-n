@@ -5,7 +5,7 @@ import Service from "./Service.png"
 
 const Fom = () => {
   return (
-    <div className="w-[29.5rem] h-[28.5625rem] top-[1rem] ml-[12.375rem] gap-[1.4375rem] ">
+    <div className="w-[58.5rem] h-[28.5625rem] top-[1rem] ml-[12.375rem] gap-[1.4375rem] grid grid-cols-2">
       <form
         axction="contect"
         className="w-[29.5rem] h-[28.5625rem] gap-0 ">
@@ -46,11 +46,28 @@ const Fom = () => {
             </button>
           </div>
         </div>
-        <div>
-
+        <div className='w-[27.5rem] h-[20.5625rem] mt-3 gap-[1.0625rem] bg-amber-700'>
+        <div className="w-[27.5rem] h-[3.125rem] gap-0 border-t border-[0.0625rem] boder-[#5A5959] bg-[#FFFFFF]">
+        <div class="form-group">
+          <div className='relative border-gray-700 border-[1px]'>
+            <label htmlFor="name" className='w-[3.25rem] h-[1.3125rem] ml-[1.5rem] px-[0.25rem]  absolute top-[1px] bg-black'>Name</label>
+            <input type="text" className='w-[27rem] h-[2.5rem] border-none focus:border-[1px] border-black'/>
+          </div>
+          <div>
+            <label htmlFor="" className=''></label>
+            <input type="text" className=''/>
+          </div>
+          <div>
+            <label htmlFor="" className=''></label>
+            <input type="text" className=''/>
+          </div>
+        </div>
+        </div>
         </div>
       </form>
-      <img src={Service}alt="Service 24/7" />
+      <div className="w-[29.5rem] h-[28.5625rem] p-1">
+      <img src={Service}alt="Service 24/7" className="w-[29.5rem] h-[28.5625rem]"/>
+      </div>
     </div>
   );
 };
