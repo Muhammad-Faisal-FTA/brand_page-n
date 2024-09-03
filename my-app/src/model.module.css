@@ -1,0 +1,69 @@
+.overLay{
+ width: 100%;
+ height: 100%;
+ display: none;
+ transition: 3s;
+ background-color: rgba(0, 0, 1, 0.5);
+ position: fixed;
+}
+.showLay{
+    display:block
+}
+.popup{
+ width: 25rem;
+ height: 25rem;
+ top: -25rem;
+ transition: 1s;
+ left:35%;
+ background-color: rgba(0, 0, 1, 0.5);
+ position: fixed;
+}
+.showpopup{
+    border-radius: 5px;
+    top:12rem;
+}
+
+
+
+.faqs{
+    width: 1320px;
+    margin: 0;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    background-color: aquamarine;
+}
+.qus{
+    width: 1310px;
+    height: auto;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    background-color: rgb(1, 1, 39);
+}
+.qus h1{
+    cursor: pointer;
+    margin: 0;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+}
+.qus p{
+    margin: 0;    
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px ;
+    font-weight: 300 ;
+    margin:2px ;
+    transition: 1s;
+    padding: 2px ;
+    transform: scaleY(0);
+    text-align: justify;
+}
+.actans{
+    height: auto !important;
+    transform: scaleY(1) !important;
+}
